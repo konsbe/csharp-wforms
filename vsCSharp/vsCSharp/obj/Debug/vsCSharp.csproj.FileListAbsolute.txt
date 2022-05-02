@@ -1,0 +1,11 @@
+C:\Users\konsb\source\repos\vsCSharp\vsCSharp\bin\Debug\vsCSharp.exe.config
+C:\Users\konsb\source\repos\vsCSharp\vsCSharp\bin\Debug\vsCSharp.exe
+C:\Users\konsb\source\repos\vsCSharp\vsCSharp\bin\Debug\vsCSharp.pdb
+C:\Users\konsb\source\repos\vsCSharp\vsCSharp\obj\Debug\vsCSharp.csproj.AssemblyReference.cache
+C:\Users\konsb\source\repos\vsCSharp\vsCSharp\obj\Debug\vsCSharp.csproj.SuggestedBindingRedirects.cache
+C:\Users\konsb\source\repos\vsCSharp\vsCSharp\obj\Debug\vsCSharp.Properties.Resources.resources
+C:\Users\konsb\source\repos\vsCSharp\vsCSharp\obj\Debug\vsCSharp.csproj.GenerateResource.cache
+C:\Users\konsb\source\repos\vsCSharp\vsCSharp\obj\Debug\vsCSharp.csproj.CoreCompileInputs.cache
+C:\Users\konsb\source\repos\vsCSharp\vsCSharp\obj\Debug\vsCSharp.exe
+C:\Users\konsb\source\repos\vsCSharp\vsCSharp\obj\Debug\vsCSharp.pdb
+C:\Users\konsb\source\repos\vsCSharp\vsCSharp\obj\Debug\vsCSharp.Form1.resources
