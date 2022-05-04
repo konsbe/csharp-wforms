@@ -19,6 +19,7 @@ namespace RAD2022_2
             InitializeComponent();
             data = k;
             usernameToolStripMenuItem.Text = "Welcome, " + k;
+            richTextBox1.LoadFile("textfiles\\unipi.txt", RichTextBoxStreamType.PlainText);
         }
         public Form1()
         {
@@ -29,6 +30,7 @@ namespace RAD2022_2
         private void button2_Click(object sender, EventArgs e)
         {
             pictureBox1.ImageLocation = @"images\maxresdefault.jpg";
+            button2.Text = "Click Image!";
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -39,7 +41,7 @@ namespace RAD2022_2
 
         private void button3_Click(object sender, EventArgs e)
         {
-            richTextBox1.LoadFile("textfiles\\unipi.txt",RichTextBoxStreamType.PlainText);
+            richTextBox1.LoadFile("textfiles\\new.txt",RichTextBoxStreamType.PlainText);
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -48,12 +50,6 @@ namespace RAD2022_2
             {
                 this.BackColor = colorDialog1.Color;
             }
-            else
-            {
-                    System.Diagnostics.Process.Start("google", "https://www.google.com");
-            }
-            //colorDialog1.ShowDialog();
-            //this.BackColor = colorDialog1.Color;
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -140,9 +136,9 @@ namespace RAD2022_2
 
         private void homePageToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
-
-            Form3 f3 = new Form3();
+            data = usernameToolStripMenuItem.Text;
+            this.Hide();
+            Form3 f3 = new Form3(data);
             f3.Show();
         }
     }

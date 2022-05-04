@@ -77,7 +77,8 @@ namespace RAD2022_2
         private void homePageToolStripMenuItem_Click(object sender, EventArgs e)
         {
             data = usernameToolStripMenuItem.Text;
-            Form3 f3 = new Form3(usernameToolStripMenuItem.Text);
+            this.Hide();
+            Form3 f3 = new Form3(data);
             f3.Show();
         }
 
@@ -86,10 +87,6 @@ namespace RAD2022_2
             if (colorDialog1.ShowDialog() == DialogResult.OK)
             {
                 this.BackColor = colorDialog1.Color;
-            }
-            else
-            {
-                System.Diagnostics.Process.Start("google", "https://www.google.com");
             }
         }
 
