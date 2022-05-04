@@ -20,6 +20,7 @@ namespace RAD2022_2
             data = k;
             usernameToolStripMenuItem.Text = "Welcome, " + k;
             richTextBox1.LoadFile("textfiles\\unipi.txt", RichTextBoxStreamType.PlainText);
+
         }
         public Form1()
         {
@@ -30,7 +31,7 @@ namespace RAD2022_2
         private void button2_Click(object sender, EventArgs e)
         {
             pictureBox1.ImageLocation = @"images\maxresdefault.jpg";
-            button2.Text = "Click Image!";
+            button2.Text = "Click img -> mute";
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -78,6 +79,7 @@ namespace RAD2022_2
         {
             SoundPlayer player = new SoundPlayer("BSB.wav");
             player.Play();
+            button7.Text = "Click img Button";
         }
 
         private void Form1_Load(object sender, EventArgs e)
