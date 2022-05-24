@@ -31,10 +31,10 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.scorersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usernameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button8 = new System.Windows.Forms.Button();
-            this.scorersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,6 +72,12 @@
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
+            // scorersToolStripMenuItem
+            // 
+            this.scorersToolStripMenuItem.Name = "scorersToolStripMenuItem";
+            this.scorersToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
+            this.scorersToolStripMenuItem.Text = "Scorers";
+            // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
@@ -84,6 +90,7 @@
             this.usernameToolStripMenuItem.Name = "usernameToolStripMenuItem";
             this.usernameToolStripMenuItem.Size = new System.Drawing.Size(94, 24);
             this.usernameToolStripMenuItem.Text = "username: ";
+            this.usernameToolStripMenuItem.Click += new System.EventHandler(this.usernameToolStripMenuItem_Click);
             // 
             // button8
             // 
@@ -96,12 +103,6 @@
             this.button8.Text = "Close App";
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // scorersToolStripMenuItem
-            // 
-            this.scorersToolStripMenuItem.Name = "scorersToolStripMenuItem";
-            this.scorersToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
-            this.scorersToolStripMenuItem.Text = "Scorers";
             // 
             // Form3
             // 

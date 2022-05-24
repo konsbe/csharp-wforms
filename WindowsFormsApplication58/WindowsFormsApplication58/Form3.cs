@@ -56,5 +56,10 @@ namespace WindowsFormsApplication58
         {
             Application.Exit();
         }
+
+        private void usernameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
