@@ -13,15 +13,20 @@ namespace WindowsFormsApplication58
 {
     public partial class Form2 : Form
     {
-        public static String data;
+        public static String data, level;
         string message, score;
         Random r;
         int hitcounter, time;
-        public Form2(String k)
+        public Form2(String k, String t)
         {
             InitializeComponent();
             data = k;
+            level = t;
             usernameToolStripMenuItem.Text = "Welcome, " + k+" "+ DateTime.Now;
+            if (level == "2")
+            {
+                pictureBox1.Size = new Size(30, 30);
+            }else { pictureBox1.Size = new Size(80, 80);}
 
         }
         public Form2()
@@ -77,6 +82,7 @@ namespace WindowsFormsApplication58
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            
             hitcounter++;
             label2.Text = hitcounter.ToString() + " hits!";
         }
@@ -106,9 +112,16 @@ namespace WindowsFormsApplication58
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            time++;
+            if (level == "2")
+            {
+                time += 2;
+            }
+            else
+            {
+                time++;
+            }
             label3.Text = time.ToString();
-            if (time == 5)
+            if (time == 30)
             {
                 timer1.Enabled = false;
                 timer2.Enabled = false;
