@@ -24,3 +24,12 @@ C:\Users\konsb\source\repos\RAD2022_2\RAD2022_2\obj\Debug\RAD2022_2.csproj.CoreC
 C:\Users\konsb\source\repos\RAD2022_2\RAD2022_2\obj\Debug\RAD2022_2.exe
 C:\Users\konsb\source\repos\RAD2022_2\RAD2022_2\obj\Debug\RAD2022_2.pdb
 C:\Users\konsb\source\repos\RAD2022_2\RAD2022_2\obj\Debug\RAD2022_2.Form3.resources
+C:\Users\konsb\source\repos\RAD2022_2\RAD2022_2\bin\Debug\EntityFramework.dll
+C:\Users\konsb\source\repos\RAD2022_2\RAD2022_2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\konsb\source\repos\RAD2022_2\RAD2022_2\bin\Debug\System.Data.SQLite.dll
+C:\Users\konsb\source\repos\RAD2022_2\RAD2022_2\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\konsb\source\repos\RAD2022_2\RAD2022_2\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\konsb\source\repos\RAD2022_2\RAD2022_2\bin\Debug\EntityFramework.xml
+C:\Users\konsb\source\repos\RAD2022_2\RAD2022_2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\konsb\source\repos\RAD2022_2\RAD2022_2\bin\Debug\System.Data.SQLite.xml
+C:\Users\konsb\source\repos\RAD2022_2\RAD2022_2\obj\Debug\RAD2022_2.csproj.CopyComplete
