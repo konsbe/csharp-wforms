@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace RAD2022_2
 {
-    public partial class Form1 : System.Windows.Forms.Form
+    public partial class FormUserProfile : System.Windows.Forms.Form
     {
         public static String data;
-        public Form1(String k)
+        public FormUserProfile(String k)
         {
             InitializeComponent();
             data = k;
@@ -22,7 +22,7 @@ namespace RAD2022_2
             richTextBox1.LoadFile("textfiles\\unipi.txt", RichTextBoxStreamType.PlainText);
 
         }
-        public Form1()
+        public FormUserProfile()
         {
             InitializeComponent();
         }
@@ -109,18 +109,12 @@ namespace RAD2022_2
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form3 f3 = new Form3(data);
-            f3.Show();
-        }
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
 
-            Form2 f2 = new Form2();
+            FormSignUp f2 = new FormSignUp();
             f2.Show();
         }
 
@@ -138,17 +132,15 @@ namespace RAD2022_2
 
         private void homePageToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            data = usernameToolStripMenuItem.Text;
             this.Hide();
-            Form3 f3 = new Form3(data);
+            FormMainPage f3 = new FormMainPage(data);
             f3.Show();
         }
 
         private void profileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            data = usernameToolStripMenuItem.Text;
             this.Hide();
-            FormProfile fp = new FormProfile();
+            FormUserProfile fp = new FormUserProfile(data);
             fp.Show();
         }
     }

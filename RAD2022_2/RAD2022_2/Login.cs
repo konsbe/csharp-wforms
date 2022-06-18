@@ -21,7 +21,7 @@ namespace RAD2022_2
         {
             if(textBox1.Text == "user" && textBox2.Text == "pass")
             {
-                new Form1().Show();
+                new FormUserProfile().Show();
             }
             else
             {

@@ -11,17 +11,17 @@ using System.Windows.Forms;
 
 namespace RAD2022_2
 {
-    public partial class Form3 : Form
+    public partial class FormMainPage : Form
     {
         public static String data;
-        public Form3(String k)
+        public FormMainPage(String k)
         {
             InitializeComponent();
             data = k;
             usernameToolStripMenuItem.Text = "Welcome, "+k;
             pictureBox2.ImageLocation = @"images\download.jpg";
         }
-        public Form3()
+        public FormMainPage()
         {
             InitializeComponent();
         }
@@ -36,13 +36,6 @@ namespace RAD2022_2
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form1 f1 = new Form1(data);
-            f1.Show();
-
-        }
 
    
 
@@ -65,7 +58,7 @@ namespace RAD2022_2
         {
             this.Close();
             
-            Form2 f2 = new Form2();
+            FormSignUp f2 = new FormSignUp();
             f2.Show();
         }
 
@@ -76,22 +69,21 @@ namespace RAD2022_2
 
         private void homePageToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            data = usernameToolStripMenuItem.Text;
             this.Hide();
-            Form3 f3 = new Form3(data);
+            FormMainPage f3 = new FormMainPage(data);
             f3.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            if (colorDialog1.ShowDialog() == DialogResult.OK)
-            {
-                this.BackColor = colorDialog1.Color;
-            }
-        }
 
         private void Form3_Load(object sender, EventArgs e)
         {
                     }
+
+        private void profileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormUserProfile fp = new FormUserProfile(data);
+            fp.Show();
+        }
     }
 }

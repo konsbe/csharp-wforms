@@ -1,7 +1,7 @@
 ﻿
 namespace RAD2022_2
 {
-    partial class Form1
+    partial class FormUserProfile
     {
         /// <summary>
         /// Required designer variable.
@@ -41,7 +41,6 @@ namespace RAD2022_2
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.homePageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -96,7 +95,7 @@ namespace RAD2022_2
             // 
             this.button4.BackColor = System.Drawing.Color.LightCoral;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.button4.Location = new System.Drawing.Point(396, -6);
+            this.button4.Location = new System.Drawing.Point(517, -4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(97, 33);
             this.button4.TabIndex = 6;
@@ -123,7 +122,7 @@ namespace RAD2022_2
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button6.Location = new System.Drawing.Point(45, 417);
+            this.button6.Location = new System.Drawing.Point(45, 414);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(277, 51);
             this.button6.TabIndex = 8;
@@ -157,17 +156,6 @@ namespace RAD2022_2
             this.button8.Text = "Close App";
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Location = new System.Drawing.Point(499, -5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 32);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Back to Home";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // menuStrip1
             // 
@@ -211,13 +199,12 @@ namespace RAD2022_2
             this.profileToolStripMenuItem.Text = "Profile";
             this.profileToolStripMenuItem.Click += new System.EventHandler(this.profileToolStripMenuItem_Click);
             // 
-            // Form1
+            // FormUserProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(782, 953);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -229,7 +216,7 @@ namespace RAD2022_2
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "FormUserProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -254,7 +241,6 @@ namespace RAD2022_2
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem homePageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;

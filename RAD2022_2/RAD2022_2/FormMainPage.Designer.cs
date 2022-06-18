@@ -1,6 +1,6 @@
 ﻿namespace RAD2022_2
 {
-    partial class Form3
+    partial class FormMainPage
     {
         /// <summary>
         /// Required designer variable.
@@ -29,14 +29,13 @@
         private void InitializeComponent()
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.homePageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usernameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button4 = new System.Windows.Forms.Button();
+            this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -52,16 +51,6 @@
             this.textBox1.TabIndex = 8;
             this.textBox1.Text = "Dioni Katohi Tsimari";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(505, 139);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 239);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Visit West Side Eastern Destination";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button8
             // 
@@ -91,7 +80,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.homePageToolStripMenuItem,
             this.logOutToolStripMenuItem,
-            this.usernameToolStripMenuItem});
+            this.usernameToolStripMenuItem,
+            this.profileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(782, 28);
@@ -120,31 +110,24 @@
             this.usernameToolStripMenuItem.Text = "username: ";
             this.usernameToolStripMenuItem.Click += new System.EventHandler(this.usernameToolStripMenuItem_Click);
             // 
-            // button4
+            // profileToolStripMenuItem
             // 
-            this.button4.BackColor = System.Drawing.Color.LightCoral;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.button4.Location = new System.Drawing.Point(447, -2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(208, 30);
-            this.button4.TabIndex = 16;
-            this.button4.Text = "Choose Color";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
+            this.profileToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
+            this.profileToolStripMenuItem.Text = "Profile";
+            this.profileToolStripMenuItem.Click += new System.EventHandler(this.profileToolStripMenuItem_Click);
             // 
-            // Form3
+            // FormMainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 953);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button8);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form3";
+            this.Name = "FormMainPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             this.Load += new System.EventHandler(this.Form3_Load);
@@ -159,14 +142,13 @@
         #endregion
 
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem homePageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usernameToolStripMenuItem;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.ToolStripMenuItem profileToolStripMenuItem;
     }
 }

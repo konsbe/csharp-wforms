@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace RAD2022_2
 {
-    public partial class Form2 : System.Windows.Forms.Form
+    public partial class FormLogIn : System.Windows.Forms.Form
     {
         public static String data;
         private String connectionString = "Data source=.\\rad2022_4.db;Version=3";
         SQLiteConnection conn;
-        public Form2()
+        public FormLogIn()
         {
             InitializeComponent();
         }
@@ -46,7 +46,7 @@ namespace RAD2022_2
                     data = textBox2.Text;
                 }
 
-                Form3 f3 = new Form3(textBox1.Text);
+                FormHomePage f3 = new FormHomePage(textBox1.Text);
                 f3.Show();
             } else {
                 conn.Close();
