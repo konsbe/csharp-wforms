@@ -143,5 +143,13 @@ namespace RAD2022_2
             Form3 f3 = new Form3(data);
             f3.Show();
         }
+
+        private void profileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            data = usernameToolStripMenuItem.Text;
+            this.Hide();
+            FormProfile fp = new FormProfile();
+            fp.Show();
+        }
     }
 }

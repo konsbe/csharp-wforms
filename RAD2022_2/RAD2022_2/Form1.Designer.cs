@@ -46,6 +46,7 @@ namespace RAD2022_2
             this.homePageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usernameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -75,7 +76,7 @@ namespace RAD2022_2
             // 
             this.richTextBox1.Location = new System.Drawing.Point(282, 55);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(774, 324);
+            this.richTextBox1.Size = new System.Drawing.Size(488, 324);
             this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = "";
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
@@ -83,7 +84,7 @@ namespace RAD2022_2
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button3.Location = new System.Drawing.Point(282, 401);
+            this.button3.Location = new System.Drawing.Point(337, 417);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(208, 51);
             this.button3.TabIndex = 5;
@@ -95,9 +96,9 @@ namespace RAD2022_2
             // 
             this.button4.BackColor = System.Drawing.Color.LightCoral;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.button4.Location = new System.Drawing.Point(744, -1);
+            this.button4.Location = new System.Drawing.Point(396, -6);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(208, 33);
+            this.button4.Size = new System.Drawing.Size(97, 33);
             this.button4.TabIndex = 6;
             this.button4.Text = "Choose Color";
             this.button4.UseVisualStyleBackColor = false;
@@ -105,10 +106,10 @@ namespace RAD2022_2
             // 
             // button5
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button5.Location = new System.Drawing.Point(496, 401);
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.button5.Location = new System.Drawing.Point(560, 417);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(277, 51);
+            this.button5.Size = new System.Drawing.Size(210, 51);
             this.button5.TabIndex = 7;
             this.button5.Text = "Load Text from File";
             this.button5.UseVisualStyleBackColor = true;
@@ -122,7 +123,7 @@ namespace RAD2022_2
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button6.Location = new System.Drawing.Point(779, 401);
+            this.button6.Location = new System.Drawing.Point(45, 417);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(277, 51);
             this.button6.TabIndex = 8;
@@ -149,7 +150,7 @@ namespace RAD2022_2
             // 
             this.button8.BackColor = System.Drawing.Color.Red;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.button8.Location = new System.Drawing.Point(1152, 0);
+            this.button8.Location = new System.Drawing.Point(620, -4);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(150, 32);
             this.button8.TabIndex = 11;
@@ -160,9 +161,9 @@ namespace RAD2022_2
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Location = new System.Drawing.Point(948, 0);
+            this.button1.Location = new System.Drawing.Point(499, -5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(208, 32);
+            this.button1.Size = new System.Drawing.Size(115, 32);
             this.button1.TabIndex = 12;
             this.button1.Text = "Back to Home";
             this.button1.UseVisualStyleBackColor = false;
@@ -174,40 +175,48 @@ namespace RAD2022_2
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.homePageToolStripMenuItem,
             this.logOutToolStripMenuItem,
-            this.usernameToolStripMenuItem});
+            this.usernameToolStripMenuItem,
+            this.profileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1302, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(782, 28);
             this.menuStrip1.TabIndex = 13;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // homePageToolStripMenuItem
             // 
             this.homePageToolStripMenuItem.Name = "homePageToolStripMenuItem";
-            this.homePageToolStripMenuItem.Size = new System.Drawing.Size(100, 26);
+            this.homePageToolStripMenuItem.Size = new System.Drawing.Size(100, 24);
             this.homePageToolStripMenuItem.Text = "Home Page";
             this.homePageToolStripMenuItem.Click += new System.EventHandler(this.homePageToolStripMenuItem_Click);
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(76, 26);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
             this.logOutToolStripMenuItem.Text = "Log Out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
             // usernameToolStripMenuItem
             // 
             this.usernameToolStripMenuItem.Name = "usernameToolStripMenuItem";
-            this.usernameToolStripMenuItem.Size = new System.Drawing.Size(94, 26);
+            this.usernameToolStripMenuItem.Size = new System.Drawing.Size(94, 24);
             this.usernameToolStripMenuItem.Text = "username: ";
             this.usernameToolStripMenuItem.Click += new System.EventHandler(this.usernameToolStripMenuItem_Click);
+            // 
+            // profileToolStripMenuItem
+            // 
+            this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
+            this.profileToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
+            this.profileToolStripMenuItem.Text = "Profile";
+            this.profileToolStripMenuItem.Click += new System.EventHandler(this.profileToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1302, 497);
+            this.ClientSize = new System.Drawing.Size(782, 953);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -250,6 +259,7 @@ namespace RAD2022_2
         private System.Windows.Forms.ToolStripMenuItem homePageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usernameToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem profileToolStripMenuItem;
     }
 }
 
