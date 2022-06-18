@@ -41,8 +41,10 @@ namespace RAD2022_2
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.homePageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usernameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.profileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.logoutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -137,10 +139,10 @@ namespace RAD2022_2
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.profileToolStripMenuItem,
             this.homePageToolStripMenuItem,
             this.logOutToolStripMenuItem,
-            this.usernameToolStripMenuItem,
-            this.profileToolStripMenuItem});
+            this.usernameToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(782, 28);
@@ -157,16 +159,8 @@ namespace RAD2022_2
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
-            this.logOutToolStripMenuItem.Text = "Log Out";
-            this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
-            // 
-            // profileToolStripMenuItem
-            // 
-            this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
-            this.profileToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
-            this.profileToolStripMenuItem.Text = "Profile";
-            this.profileToolStripMenuItem.Click += new System.EventHandler(this.profileToolStripMenuItem_Click);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(130, 24);
+            this.logOutToolStripMenuItem.Text = "Log In / Sign Up";
             // 
             // usernameToolStripMenuItem
             // 
@@ -174,6 +168,30 @@ namespace RAD2022_2
             this.usernameToolStripMenuItem.Size = new System.Drawing.Size(94, 24);
             this.usernameToolStripMenuItem.Text = "username: ";
             this.usernameToolStripMenuItem.Click += new System.EventHandler(this.usernameToolStripMenuItem_Click);
+            // 
+            // profileToolStripMenuItem
+            // 
+            this.profileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.profileToolStripMenuItem1,
+            this.logoutToolStripMenuItem1});
+            this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
+            this.profileToolStripMenuItem.Size = new System.Drawing.Size(104, 24);
+            this.profileToolStripMenuItem.Text = "Student Info";
+            this.profileToolStripMenuItem.Click += new System.EventHandler(this.profileToolStripMenuItem_Click);
+            // 
+            // profileToolStripMenuItem1
+            // 
+            this.profileToolStripMenuItem1.Name = "profileToolStripMenuItem1";
+            this.profileToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.profileToolStripMenuItem1.Text = "Profile";
+            this.profileToolStripMenuItem1.Click += new System.EventHandler(this.profileToolStripMenuItem1_Click);
+            // 
+            // logoutToolStripMenuItem1
+            // 
+            this.logoutToolStripMenuItem1.Name = "logoutToolStripMenuItem1";
+            this.logoutToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.logoutToolStripMenuItem1.Text = "Log Out";
+            this.logoutToolStripMenuItem1.Click += new System.EventHandler(this.logoutToolStripMenuItem1_Click);
             // 
             // FormSignUp
             // 
@@ -216,5 +234,7 @@ namespace RAD2022_2
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem profileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usernameToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem profileToolStripMenuItem1;
     }
 }

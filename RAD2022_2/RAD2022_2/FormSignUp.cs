@@ -119,7 +119,17 @@ namespace RAD2022_2
             f3.Show();
         }
 
-        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void usernameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logoutToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             this.Close();
 
@@ -127,21 +137,16 @@ namespace RAD2022_2
             f2.Show();
         }
 
-
-        private void profileToolStripMenuItem_Click(object sender, EventArgs e)
+        private void profileToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             data = "unknown";
             this.Hide();
             FormUserProfile fp = new FormUserProfile(data);
             fp.Show();
+
         }
 
-        private void button8_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void usernameToolStripMenuItem_Click(object sender, EventArgs e)
+        private void profileToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

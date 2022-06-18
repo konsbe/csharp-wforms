@@ -79,7 +79,15 @@ namespace RAD2022_2
         {
                     }
 
-        private void profileToolStripMenuItem_Click(object sender, EventArgs e)
+        private void logOutToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+            FormSignUp f2 = new FormSignUp();
+            f2.Show();
+        }
+
+        private void profileToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             this.Hide();
             FormUserProfile fp = new FormUserProfile(data);
