@@ -83,7 +83,9 @@
     <Compile Include="FormMainPage.Designer.cs">
       <DependentUpon>FormMainPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Human.cs" />
+    <Compile Include="Lessons.cs" />
+    <Compile Include="ILessons.cs" />
+    <Compile Include="IStudent.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>

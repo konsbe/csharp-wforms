@@ -19,7 +19,7 @@ namespace RAD2022_2
             InitializeComponent();
             data = k;
             usernameToolStripMenuItem.Text = "Welcome, " + k;
-            richTextBox1.LoadFile("textfiles\\unipi.txt", RichTextBoxStreamType.PlainText);
+            richTextBox1.LoadFile("textfiles\\programma.txt", RichTextBoxStreamType.PlainText);
 
         }
         public FormUserProfile()
@@ -40,9 +40,10 @@ namespace RAD2022_2
             System.Diagnostics.Process.Start("IExplore", "http://www.youtube.com/watch?v=Dqhy54VV4LY&ab_channel=alexkord1");
         }
 
+
         private void button3_Click(object sender, EventArgs e)
         {
-            richTextBox1.LoadFile("textfiles\\new.txt",RichTextBoxStreamType.PlainText);
+            richTextBox1.LoadFile("textfiles\\mathimata.txt",RichTextBoxStreamType.PlainText);
         }
 
         private void button4_Click(object sender, EventArgs e)

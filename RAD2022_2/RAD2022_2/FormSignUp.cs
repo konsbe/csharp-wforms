@@ -14,6 +14,8 @@ namespace RAD2022_2
     public partial class FormSignUp : System.Windows.Forms.Form
     {
         public static String data;
+        public Student student;
+
         private String connectionString = "Data source=.\\rad2022_4.db;Version=3";
         SQLiteConnection conn;
         public FormSignUp()
@@ -24,29 +26,35 @@ namespace RAD2022_2
         private void button1_Click(object sender, EventArgs e)
         {
             conn = new SQLiteConnection(connectionString);
-
             conn.Open();
             String name = textBox3.Text;
             String email = textBox1.Text;
             String password = textBox2.Text;
             String selectSQL = "Select * from User where " +
             "email=@email and password=@password";
+
             SQLiteCommand cmd = new SQLiteCommand(selectSQL, conn);
             cmd.Parameters.AddWithValue("@email", email);
             cmd.Parameters.AddWithValue("@password", password);
             SQLiteDataReader reader = cmd.ExecuteReader();
             if (reader.Read()) {
+                Student student = new Student(22,password,email,name);
+
+                //student.name = name.ToString();
+                //student.email(email);
+                MessageBox.Show(student.name);
                 conn.Close();
                 this.Hide();
                 if (name != "" || name != null)
                 {
-                    data = textBox1.Text;
+
+                    data = student.name;
                 } else
                 {
-                    data = textBox2.Text;
+                    data = student.id;
                 }
 
-                FormMainPage f3 = new FormMainPage(textBox1.Text);
+                FormMainPage f3 = new FormMainPage(student.name);
                 f3.Show();
             } else {
                 conn.Close();
@@ -105,7 +113,7 @@ namespace RAD2022_2
 
         private void homePageToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            data = usernameToolStripMenuItem.Text;
+            data = student.name;
             this.Hide();
             FormMainPage f3 = new FormMainPage(data);
             f3.Show();
@@ -122,7 +130,7 @@ namespace RAD2022_2
 
         private void profileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            data = usernameToolStripMenuItem.Text;
+            data = student.name;
             this.Hide();
             FormUserProfile fp = new FormUserProfile(data);
             fp.Show();
