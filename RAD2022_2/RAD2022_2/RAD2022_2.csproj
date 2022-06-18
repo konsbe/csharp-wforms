@@ -83,7 +83,7 @@
     <Compile Include="FormMainPage.Designer.cs">
       <DependentUpon>FormMainPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Lessons.cs" />
+    <Compile Include="ClassLessons.cs" />
     <Compile Include="ILessons.cs" />
     <Compile Include="IStudent.cs" />
     <Compile Include="Login.cs">
@@ -94,7 +94,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Student.cs" />
+    <Compile Include="ClassStudent.cs" />
     <EmbeddedResource Include="FormUserProfile.resx">
       <DependentUpon>FormUserProfile.cs</DependentUpon>
     </EmbeddedResource>

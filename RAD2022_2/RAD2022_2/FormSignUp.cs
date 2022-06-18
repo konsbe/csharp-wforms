@@ -14,7 +14,7 @@ namespace RAD2022_2
     public partial class FormSignUp : System.Windows.Forms.Form
     {
         public static String data;
-        public Student student;
+        public ClassStudent student;
 
         private String connectionString = "Data source=.\\rad2022_4.db;Version=3";
         SQLiteConnection conn;
@@ -38,11 +38,11 @@ namespace RAD2022_2
             cmd.Parameters.AddWithValue("@password", password);
             SQLiteDataReader reader = cmd.ExecuteReader();
             if (reader.Read()) {
-                Student student = new Student(22,password,email,name);
+                ClassStudent student = new ClassStudent(22,password,email,name);
 
                 //student.name = name.ToString();
                 //student.email(email);
-                MessageBox.Show(student.name);
+                MessageBox.Show("Welcome, "+student.name);
                 conn.Close();
                 this.Hide();
                 if (name != "" || name != null)
