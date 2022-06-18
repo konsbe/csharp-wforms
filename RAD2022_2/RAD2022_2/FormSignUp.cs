@@ -113,7 +113,7 @@ namespace RAD2022_2
 
         private void homePageToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            data = student.name;
+            data = "unknown";
             this.Hide();
             FormMainPage f3 = new FormMainPage(data);
             f3.Show();
@@ -130,7 +130,7 @@ namespace RAD2022_2
 
         private void profileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            data = student.name;
+            data = "unknown";
             this.Hide();
             FormUserProfile fp = new FormUserProfile(data);
             fp.Show();
