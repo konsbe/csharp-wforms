@@ -33,3 +33,4 @@ C:\Users\konsb\source\repos\RAD2022_2\RAD2022_2\obj\Debug\RAD2022_2.csproj.CopyC
 C:\Users\konsb\source\repos\RAD2022_2\RAD2022_2\obj\Debug\RAD2022_2.FormUserProfile.resources
 C:\Users\konsb\source\repos\RAD2022_2\RAD2022_2\obj\Debug\RAD2022_2.FormSignUp.resources
 C:\Users\konsb\source\repos\RAD2022_2\RAD2022_2\obj\Debug\RAD2022_2.FormMainPage.resources
+C:\Users\konsb\source\repos\RAD2022_2\RAD2022_2\obj\Debug\RAD2022_2.FormLogIn.resources

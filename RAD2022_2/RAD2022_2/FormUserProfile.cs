@@ -105,11 +105,6 @@ namespace RAD2022_2
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
 
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -155,5 +150,6 @@ namespace RAD2022_2
             FormSignUp f2 = new FormSignUp();
             f2.Show();
         }
+
     }
 }

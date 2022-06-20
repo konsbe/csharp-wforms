@@ -45,6 +45,10 @@ namespace RAD2022_2
             this.homePageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usernameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,7 +65,7 @@ namespace RAD2022_2
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox1.Location = new System.Drawing.Point(266, 96);
+            this.textBox1.Location = new System.Drawing.Point(40, 100);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(227, 41);
             this.textBox1.TabIndex = 2;
@@ -70,7 +74,7 @@ namespace RAD2022_2
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox2.Location = new System.Drawing.Point(266, 261);
+            this.textBox2.Location = new System.Drawing.Point(262, 272);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(227, 41);
             this.textBox2.TabIndex = 3;
@@ -79,7 +83,7 @@ namespace RAD2022_2
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox3.Location = new System.Drawing.Point(266, 182);
+            this.textBox3.Location = new System.Drawing.Point(40, 186);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(227, 41);
             this.textBox3.TabIndex = 4;
@@ -98,7 +102,7 @@ namespace RAD2022_2
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(361, 58);
+            this.label1.Location = new System.Drawing.Point(135, 62);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 16);
             this.label1.TabIndex = 6;
@@ -108,7 +112,7 @@ namespace RAD2022_2
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(361, 154);
+            this.label2.Location = new System.Drawing.Point(135, 158);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 16);
             this.label2.TabIndex = 7;
@@ -117,7 +121,7 @@ namespace RAD2022_2
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(348, 238);
+            this.label3.Location = new System.Drawing.Point(342, 239);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(66, 16);
             this.label3.TabIndex = 8;
@@ -162,14 +166,14 @@ namespace RAD2022_2
             // profileToolStripMenuItem1
             // 
             this.profileToolStripMenuItem1.Name = "profileToolStripMenuItem1";
-            this.profileToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.profileToolStripMenuItem1.Size = new System.Drawing.Size(135, 26);
             this.profileToolStripMenuItem1.Text = "Profile";
             this.profileToolStripMenuItem1.Click += new System.EventHandler(this.profileToolStripMenuItem1_Click);
             // 
             // logoutToolStripMenuItem1
             // 
             this.logoutToolStripMenuItem1.Name = "logoutToolStripMenuItem1";
-            this.logoutToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.logoutToolStripMenuItem1.Size = new System.Drawing.Size(135, 26);
             this.logoutToolStripMenuItem1.Text = "Log In";
             this.logoutToolStripMenuItem1.Click += new System.EventHandler(this.logoutToolStripMenuItem1_Click);
             // 
@@ -185,6 +189,7 @@ namespace RAD2022_2
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
             this.logOutToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
             this.logOutToolStripMenuItem.Text = "Sign Up";
+            this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
             // usernameToolStripMenuItem
             // 
@@ -193,11 +198,52 @@ namespace RAD2022_2
             this.usernameToolStripMenuItem.Text = "username: ";
             this.usernameToolStripMenuItem.Click += new System.EventHandler(this.usernameToolStripMenuItem_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(557, 158);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(88, 16);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "Ημ. Γέννησης";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(545, 72);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(122, 16);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "Αριτθμός Μητρώου";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // textBox6
+            // 
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.textBox6.Location = new System.Drawing.Point(487, 100);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(227, 41);
+            this.textBox6.TabIndex = 18;
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            this.dateTimePicker1.Location = new System.Drawing.Point(487, 186);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(227, 19);
+            this.dateTimePicker1.TabIndex = 24;
+            // 
             // FormSignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 953);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.label3);
@@ -236,5 +282,9 @@ namespace RAD2022_2
         private System.Windows.Forms.ToolStripMenuItem usernameToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem profileToolStripMenuItem1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
